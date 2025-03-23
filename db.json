@@ -1,0 +1,77 @@
+{
+  "produtos": [
+    { "id": 1, "codigo": "7891234500001", "nome": "Sorvete de Chocolate", "preco": 89.90, "qtdAtual": 5.5, "qtdMinima": 3, "unidade": "Litros", "fornecedor": "Gelato S.A.", "categoria": "Sorvetes", "validade": "2025-04-30", "imagem": "🍫" },
+    { "id": 2, "codigo": "7891234500002", "nome": "Sorvete de Morango", "preco": 89.90, "qtdAtual": 2, "qtdMinima": 3, "unidade": "Litros", "fornecedor": "Gelato S.A.", "categoria": "Sorvetes", "validade": "2025-04-25", "imagem": "🍓" },
+    { "id": 3, "codigo": "7891234500003", "nome": "Sorvete de Baunilha", "preco": 79.90, "qtdAtual": 4, "qtdMinima": 3, "unidade": "Litros", "fornecedor": "Gelato S.A.", "categoria": "Sorvetes", "validade": "2025-04-28", "imagem": "🍦" },
+    { "id": 4, "codigo": "7891234500004", "nome": "Casquinha Comum", "preco": 25.90, "qtdAtual": 150, "qtdMinima": 50, "unidade": "Unidades", "fornecedor": "Embalagens Ice", "categoria": "Descartáveis", "validade": "2025-08-15", "imagem": "🍦" },
+    { "id": 5, "codigo": "7891234500005", "nome": "Calda de Chocolate", "preco": 29.90, "qtdAtual": 1.2, "qtdMinima": 2, "unidade": "Litros", "fornecedor": "Doces & Sabores", "categoria": "Coberturas", "validade": "2025-06-10", "imagem": "🍫" },
+    { "id": 6, "codigo": "7891234500006", "nome": "Granulado", "preco": 15.50, "qtdAtual": 0.8, "qtdMinima": 1, "unidade": "Kg", "fornecedor": "Doces & Sabores", "categoria": "Complementos", "validade": "2025-07-20", "imagem": "🧁" },
+    { "id": 7, "codigo": "7891234500007", "nome": "Copinho 200ml", "preco": 35.90, "qtdAtual": 80, "qtdMinima": 100, "unidade": "Unidades", "fornecedor": "Embalagens Ice", "categoria": "Descartáveis", "validade": "2025-12-31", "imagem": "🥤" },
+    { "id": 8, "codigo": "7891234500008", "nome": "Leite Condensado", "preco": 45.90, "qtdAtual": 5, "qtdMinima": 3, "unidade": "Latas", "fornecedor": "Atacadão de Insumos", "categoria": "Insumos", "validade": "2025-05-15", "imagem": "🥛" },
+    { "id": 9, "codigo": "7891234500009", "nome": "Sorvete de Pistache", "preco": 109.90, "qtdAtual": 3.5, "qtdMinima": 2, "unidade": "Litros", "fornecedor": "Gelato Premium", "categoria": "Sorvetes Premium", "validade": "2025-04-15", "imagem": "🥜" },
+    { "id": 10, "codigo": "7891234500010", "nome": "Sorvete de Cookies", "preco": 99.90, "qtdAtual": 2.8, "qtdMinima": 2, "unidade": "Litros", "fornecedor": "Gelato Premium", "categoria": "Sorvetes Premium", "validade": "2025-04-18", "imagem": "🍪" }
+  ],
+  "fornecedores": [
+    { "id": 1, "nome": "Gelato S.A.", "contato": "Carlos Silva", "telefone": "(11) 98765-4321", "email": "contato@gelato.com", "endereco": "Rua dos Sorvetes, 123", "prazoEntrega": 3 },
+    { "id": 2, "nome": "Embalagens Ice", "contato": "Ana Pereira", "telefone": "(11) 91234-5678", "email": "vendas@embalagensice.com", "endereco": "Av. das Embalagens, 456", "prazoEntrega": 5 },
+    { "id": 3, "nome": "Doces & Sabores", "contato": "Mario Santos", "telefone": "(11) 92345-6789", "email": "mario@docesesabores.com", "endereco": "Rua das Coberturas, 789", "prazoEntrega": 2 },
+    { "id": 4, "nome": "Atacadão de Insumos", "contato": "Julia Mendes", "telefone": "(11) 93456-7890", "email": "julia@atacadaoinsumos.com", "endereco": "Av. dos Ingredientes, 1010", "prazoEntrega": 4 },
+    { "id": 5, "nome": "Gelato Premium", "contato": "Roberto Alves", "telefone": "(11) 94567-8901", "email": "roberto@gelatopremium.com", "endereco": "Rua das Delícias, 222", "prazoEntrega": 3 }
+  ],
+  "movimentacoes": [
+    { "id": 1, "data": "2025-03-15T09:30:00", "tipo": "entrada", "produtoId": 1, "produto": "Sorvete de Chocolate", "quantidade": 3, "unidade": "Litros", "responsavel": "Administrador", "observacao": "Recebimento do fornecedor" },
+    { "id": 2, "data": "2025-03-17T14:45:00", "tipo": "saida", "produtoId": 1, "produto": "Sorvete de Chocolate", "quantidade": 0.5, "unidade": "Litros", "responsavel": "Administrador", "observacao": "Venda para cliente" },
+    { "id": 3, "data": "2025-03-18T10:15:00", "tipo": "ajuste", "produtoId": 6, "produto": "Granulado", "quantidade": -0.2, "unidade": "Kg", "responsavel": "Administrador", "observacao": "Ajuste por perda" },
+    { "id": 4, "data": "2025-03-19T16:30:00", "tipo": "entrada", "produtoId": 7, "produto": "Copinho 200ml", "quantidade": 50, "unidade": "Unidades", "responsavel": "Administrador", "observacao": "Recebimento do fornecedor" },
+    { "id": 5, "data": "2025-03-20T11:20:00", "tipo": "saida", "produtoId": 7, "produto": "Copinho 200ml", "quantidade": 3, "unidade": "Unidades", "responsavel": "Administrador", "observacao": "Venda para cliente" }
+  ],
+  "pedidos": [
+    { "id": 1, "codigo": "7891234500002", "nome": "Sorvete de Morango", "quantidade": 4, "unidade": "Litros", "fornecedor": "Gelato S.A.", "status": "Enviado", "data": "22/03/2025", "imagem": "🍓" },
+    { "id": 2, "codigo": "7891234500005", "nome": "Calda de Chocolate", "quantidade": 2.8, "unidade": "Litros", "fornecedor": "Doces & Sabores", "status": "Pendente", "data": "22/03/2025", "imagem": "🍫" },
+    { "id": 3, "codigo": "7891234500006", "nome": "Granulado", "quantidade": 1.2, "unidade": "Kg", "fornecedor": "Doces & Sabores", "status": "Pendente", "data": "22/03/2025", "imagem": "🧁" },
+    { "id": 4, "codigo": "7891234500007", "nome": "Copinho 200ml", "quantidade": 120, "unidade": "Unidades", "fornecedor": "Embalagens Ice", "status": "Pendente", "data": "22/03/2025", "imagem": "🥤" }
+  ],
+  "vendas": [
+    { "id": 1, "data": "2025-03-20", "produtos": [{"id": 1, "nome": "Sorvete de Chocolate", "qtd": 0.5, "preco": 89.90, "imagem": "🍫"}], "valorTotal": 44.95, "formaPagamento": "Crédito", "cliente": "Cliente Final" },
+    { "id": 2, "data": "2025-03-20", "produtos": [{"id": 2, "nome": "Sorvete de Morango", "qtd": 0.3, "preco": 89.90, "imagem": "🍓"}, {"id": 7, "nome": "Copinho 200ml", "qtd": 3, "preco": 35.90, "imagem": "🥤"}], "valorTotal": 134.67, "formaPagamento": "Dinheiro", "cliente": "Cliente Final" },
+    { "id": 3, "data": "2025-03-21", "produtos": [{"id": 3, "nome": "Sorvete de Baunilha", "qtd": 1, "preco": 79.90, "imagem": "🍦"}, {"id": 5, "nome": "Calda de Chocolate", "qtd": 0.1, "preco": 29.90, "imagem": "🍫"}], "valorTotal": 82.89, "formaPagamento": "Pix", "cliente": "Cliente Final" },
+    { "id": 4, "data": "2025-03-22", "produtos": [{"id": 9, "nome": "Sorvete de Pistache", "qtd": 0.5, "preco": 109.90, "imagem": "🥜"}], "valorTotal": 54.95, "formaPagamento": "Crédito", "cliente": "Cliente Final" }
+  ],
+  "configuracoes": {
+    "empresa": {
+      "nome": "Gelato Borelli",
+      "cnpj": "12.345.678/0001-90",
+      "endereco": "Rua das Gelatarias, 789 - Centro",
+      "telefone": "(11) 3456-7890",
+      "email": "contato@gelatoborelli.com",
+      "logo": "🍦"
+    },
+    "sistema": {
+      "diasAlertaValidade": 15,
+      "tema": "borelli",
+      "moeda": "BRL",
+      "idioma": "pt-BR",
+      "formatoData": "DD/MM/YYYY"
+    }
+  },
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Administrador",
+      "email": "admin@gelatoborelli.com",
+      "senha": "admin123",
+      "cargo": "Gerente",
+      "avatar": "👩‍💼",
+      "permissoes": ["admin"]
+    },
+    {
+      "id": 2,
+      "nome": "Vendedor",
+      "email": "vendas@gelatoborelli.com",
+      "senha": "vendas123",
+      "cargo": "Vendedor",
+      "avatar": "👨‍💼",
+      "permissoes": ["vendas"]
+    }
+  ]
+}
